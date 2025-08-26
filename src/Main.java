@@ -1,0 +1,59 @@
+public class Main {
+
+    public static int somar(int num1, int num2){
+        return num1 + num2;
+    }
+
+    public static int sub(int num1, int num2){
+        return num1 - num2;
+    }
+
+    public static int mult(int num1, int num2){
+        return num1 * num2;
+    }
+
+    public static double div(double num1D, double num2D){
+        return num1D / num2D;
+    }
+
+    public static double pot(double num1D, double num2D){
+        return Math.pow(num1D, num2D);
+    }
+
+    public static void main(String[] args) {
+
+        String op = args[0];
+        int num1 = Integer.parseInt(args[1]);
+        int num2 = Integer.parseInt(args[2]);
+        double num1D = Double.parseDouble(args[1]);
+        double num2D = Double.parseDouble(args[2]);
+
+        switch (op){
+
+            case "somar" -> {
+                int resultado = somar(num1, num2);
+                System.out.printf("O resultado da soma é: %d", resultado);
+            }
+
+            case "sub" -> {
+                int resultado = sub(num1, num2);
+                System.out.printf("O resultado da subtração é: %d", resultado);
+            }
+
+            case "mult" -> {
+                int resultado = mult(num1, num2);
+                System.out.printf("O resultado da multiplicação é: %d", resultado);
+            }
+
+            case "div" -> {
+                double resultado = div(num1D, num2D);
+                System.out.printf("O resultado da divisão é: %.1f", resultado);
+            }
+
+            case "pot" -> {
+                double resultado = pot(num1D, num2D);
+                System.out.printf("O resultado da soma é: %.0f", resultado);
+            }
+        }
+    }
+}
