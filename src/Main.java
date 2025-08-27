@@ -12,12 +12,12 @@ public class Main {
         return num1 * num2;
     }
 
-    public static double div(double num1D, double num2D){
-        return num1D / num2D;
+    public static double div(int num1, int num2){
+        return (float) num1 / num2;
     }
 
-    public static double pot(double num1D, double num2D){
-        return Math.pow(num1D, num2D);
+    public static double pot(int num1, int num2){
+        return Math.pow(num1, num2);
     }
 
     public static void main(String[] args) {
@@ -25,8 +25,6 @@ public class Main {
         String op = args[1];
         int num1 = Integer.parseInt(args[0]);
         int num2 = Integer.parseInt(args[2]);
-        double num1D = Double.parseDouble(args[0]);
-        double num2D = Double.parseDouble(args[2]);
 
         switch (op){
 
@@ -46,8 +44,8 @@ public class Main {
             }
 
             case ":" -> {
-                double resultado = div(num1D, num2D);
-                if (num2D == 0){
+                double resultado = div(num1, num2);
+                if (num2 == 0){
                     System.out.println("Não é possivel dividir por 0.");
                 } else {
                     System.out.printf("O resultado da divisão é: %.1f", resultado);
@@ -55,7 +53,7 @@ public class Main {
             }
 
             case "^" -> {
-                double resultado = pot(num1D, num2D);
+                double resultado = pot(num1, num2);
                 System.out.printf("O resultado da exponenciação é: %.0f", resultado);
             }
 
