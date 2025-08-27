@@ -38,7 +38,7 @@ public class Main {
                 System.out.printf("O resultado da subtração é: %d", resultado);
             }
 
-            case "*" -> {
+            case "x" -> {
                 int resultado = mult(num1, num2);
                 System.out.printf("O resultado da multiplicação é: %d", resultado);
             }
