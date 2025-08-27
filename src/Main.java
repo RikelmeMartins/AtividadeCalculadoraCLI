@@ -47,7 +47,11 @@ public class Main {
 
             case "div" -> {
                 double resultado = div(num1D, num2D);
-                System.out.printf("O resultado da divisão é: %.1f", resultado);
+                if (num2D == 0){
+                    System.out.println("Não é possivel dividir por 0.");
+                } else {
+                    System.out.printf("O resultado da divisão é: %.1f", resultado);
+                }
             }
 
             case "pot" -> {
