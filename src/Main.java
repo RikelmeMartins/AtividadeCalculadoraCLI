@@ -56,7 +56,7 @@ public class Main {
 
             case "^" -> {
                 double resultado = pot(num1D, num2D);
-                System.out.printf("O resultado da soma é: %.0f", resultado);
+                System.out.printf("O resultado da exponenciação é: %.0f", resultado);
             }
         }
     }
