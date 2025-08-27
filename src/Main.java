@@ -58,6 +58,8 @@ public class Main {
                 double resultado = pot(num1D, num2D);
                 System.out.printf("O resultado da exponenciação é: %.0f", resultado);
             }
+
+            default -> System.out.println("Oporeção invalida!");
         }
     }
 }
