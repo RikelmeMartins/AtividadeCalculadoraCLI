@@ -22,30 +22,30 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String op = args[0];
-        int num1 = Integer.parseInt(args[1]);
+        String op = args[1];
+        int num1 = Integer.parseInt(args[0]);
         int num2 = Integer.parseInt(args[2]);
-        double num1D = Double.parseDouble(args[1]);
+        double num1D = Double.parseDouble(args[0]);
         double num2D = Double.parseDouble(args[2]);
 
         switch (op){
 
-            case "somar" -> {
+            case "+" -> {
                 int resultado = somar(num1, num2);
                 System.out.printf("O resultado da soma é: %d", resultado);
             }
 
-            case "sub" -> {
+            case "-" -> {
                 int resultado = sub(num1, num2);
                 System.out.printf("O resultado da subtração é: %d", resultado);
             }
 
-            case "mult" -> {
+            case "*" -> {
                 int resultado = mult(num1, num2);
                 System.out.printf("O resultado da multiplicação é: %d", resultado);
             }
 
-            case "div" -> {
+            case ":" -> {
                 double resultado = div(num1D, num2D);
                 if (num2D == 0){
                     System.out.println("Não é possivel dividir por 0.");
@@ -54,7 +54,7 @@ public class Main {
                 }
             }
 
-            case "pot" -> {
+            case "^" -> {
                 double resultado = pot(num1D, num2D);
                 System.out.printf("O resultado da soma é: %.0f", resultado);
             }
